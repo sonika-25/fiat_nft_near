@@ -31,7 +31,7 @@ class Thumbnail extends React.Component {
       <>
         <a href= {this.state.li} className="card link">
           <div className="image">
-            <img id ='img' src ={this.props.image_id}  height='200' alt= 'of house'/>
+            <img id ='img' src ={this.props.image_id}  height='200' alt= 'of NFT'/>
 
             <div className="content meta button">
             {this.props.image_name}

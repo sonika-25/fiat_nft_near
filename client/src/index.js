@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppAir from './AppAir';
+import App from './App';
 ReactDOM.render(
   <React.StrictMode>
-    <AppAir />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

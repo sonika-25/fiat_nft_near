@@ -14,7 +14,7 @@ import './styles/nav.css'
 import './styles/gallery.css'
 import './styles/review.css'
 
-class House extends React.Component {
+class NFTtoBuy extends React.Component {
 	constructor(props) {
 		super(props)
 		this.sellToken = this.sellToken.bind(this)
@@ -130,4 +130,4 @@ componentWillMount() {
 	}
 }
 
-export default House;
+export default NFTtoBuy;

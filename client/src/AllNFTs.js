@@ -8,7 +8,7 @@ import './styles/nav.css'
 import Thumbnail from './Thumbnail.js'
 import { withRouter } from 'react-router-dom'
 
-class Houses extends React.Component {
+class AllNFTs extends React.Component {
 	constructor(props) {
 		super(props)
 }
@@ -107,4 +107,4 @@ class Houses extends React.Component {
 
 }
 
-export default withRouter(Houses)
+export default withRouter(AllNFTs)
