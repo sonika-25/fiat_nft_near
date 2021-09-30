@@ -94,7 +94,7 @@ class ViewNfts extends React.Component {
   					<div className="grid four large">
   						{// List of thumbnails
   						this.state.createdNfts.map((item,index) => (
-  							<Thumbnail image_name={this.state.itemStructs[index].name} image_id = {this.state.createdNfts[index].tokenUri} image_price= {(Number(this.state.createdNfts[index].price)*this.state.price)+2} image_itemId ={this.state.createdNfts[index].itemId} image_status= {this.state.createdNfts[index].sold}/>
+  							<Thumbnail image_name={this.state.createdNfts[index].name} image_id = {this.state.createdNfts[index].tokenUri} image_price= {(Number(this.state.createdNfts[index].price)*this.state.price)+2} image_itemId ={this.state.createdNfts[index].itemId} image_status= {this.state.createdNfts[index].sold}/>
   						))}
   					</div>
           </div>
