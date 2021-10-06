@@ -1,3 +1,4 @@
+youtube video: https://www.youtube.com/watch?v=R3opfH4yf_k
 FIAT-NFT is a project which allows users to buy NFTs with their CREDIT CARDS while at the same time allowing sellers to be paid in cryptocurrencies. 
 I used Chainlink PriceFeed Aggregator to convert ONE token price to USD. 
 
