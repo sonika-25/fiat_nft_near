@@ -40,11 +40,11 @@ class AllNFTs extends React.Component {
 							let nPrice = Number(roundData.answer)/100000000
 							priceT= nPrice;
 					});
-			await contracts.nft.methods.createToken("https://www.bbvaopenmind.com/wp-content/uploads/2015/12/Ada_Lovelace_Chalon_portrait-1-1024x1024-1.jpg").send({from:accounts[0]})
-			.then (data => {
-				currTokenId = data.events.Transfer.returnValues.tokenId
-			})
-			await contracts.stripeMarket.methods.createItem(contracts.nft._address, currTokenId, auctionPrice, "Ada Lovelace").send({from:accounts[0], value: listingPrice })
+			//await contracts.nft.methods.createToken("https://www.bbvaopenmind.com/wp-content/uploads/2015/12/Ada_Lovelace_Chalon_portrait-1-1024x1024-1.jpg").send({from:accounts[0]})
+			//.then (data => {
+			//	currTokenId = data.events.Transfer.returnValues.tokenId
+			//})
+			//await contracts.stripeMarket.methods.createItem(contracts.nft._address, currTokenId, auctionPrice, "Ada Lovelace").send({from:accounts[0], value: listingPrice })
 			let numTokens = await contracts.stripeMarket.methods.getItemId().call({from:accounts[0]});
 			await contracts.stripeMarket.methods.fetchItemsCreated().call({from: accounts[0]})
 			.then(data=>console.log(data))
