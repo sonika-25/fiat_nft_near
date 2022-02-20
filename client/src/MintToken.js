@@ -102,7 +102,7 @@ class MintToken extends React.Component {
           <input className="card button" id ='price' type='text' placeholder='input price of digital asset' onKeyUp={this.setPrice}/>
           <input className="card button" id ='name' type='text' placeholder='input name of digital asset'/>
           <br />
-          <button className = "card" onClick= {this.createToken}> Mint with ONE </button>
+          <button className = "card" onClick= {this.createToken}> Mint with ETH </button>
           <p id = 'tokenIdDisp'>  </p>
         </div>
         <br />

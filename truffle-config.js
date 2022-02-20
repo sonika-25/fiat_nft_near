@@ -1,5 +1,4 @@
 const path = require ('path');
-const { TruffleProvider } = require('@harmony-js/core');
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 require("dotenv").config();
 const { privateKey, mnemonic, infuraKey, ethMnemonic } = process.env;
@@ -34,39 +33,6 @@ module.exports = {
 
      },
 
-     testnet : {
-       network_id:'2',
-       provider : () => {
-         const truffleProvider = new TruffleProvider (
-           'https://api.s0.b.hmny.io',
-           {mnemonic: mnemonic},
-           {shardId : 0, chainId :2},
-         )
-         const newAcc = truffleProvider.addByPrivateKey(privateKey);
-         truffleProvider.setSigner(newAcc);
-         return truffleProvider;
-       }
-     },
-
-     harmony: {
-       provider: () => {
-         return new HDWalletProvider(
-           privateKey,
-           'https://api.s0.b.hmny.io',
-         );
-       },
-       network_id: 1666700000
-     },
-
-     harmonymain : {
-       provider : () => {
-         return new HDWalletProvider (
-           "0x1ed0da635980c03c78c9df00ce4b99f6ec17e5c4bcf23b676b8f6a84f5f05aea",
-           "https://api.harmony.one",
-         );
-       },
-       network_id: 1666600000
-     }
 
   },
 
